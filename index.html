@@ -18,13 +18,13 @@
     <p> Please leave your name, email, and a breif discription of the job you would like an estimate for including estimated quanity and size. Thank you!</p>
     <form id="contact-form" action="https://formsubmit.co/info@stubbornstumpgrinding.com" method="POST">
       <label for="name">Name:</label>
-      <input type="text" id="name" required>
+      <input type="text" id="name" name="name" required>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" required>
+      <input type="email" id="email" name="email" required>
 
       <label for="message">Leave us Message:</label>
-      <textarea id="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Send</button>
     </form>
@@ -34,4 +34,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
