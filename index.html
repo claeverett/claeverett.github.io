@@ -25,6 +25,30 @@
 
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
+        <p>Select the services you want:</p>
+  <div class="services">
+    <label><input type="checkbox" name="services" value="Lawn Care"> Lawn Care</label>
+    <label><input type="checkbox" name="services" value="Limb Trim"> Limb Trim</label>
+    <label><input type="checkbox" name="services" value="Stump Grinding"> Stump Grinding</label>
+    <label><input type="checkbox" name="services" value="Hardscaping"> Hardscaping</label>
+    <label><input type="checkbox" name="services" value="Soft Washing"> Soft Washing</label>
+    <label><input type="checkbox" name="services" value="Pressure Washing"> Pressure Washing</label>
+    <label><input type="checkbox" name="services" value="Surface Cleaning"> Surface Cleaning</label>
+    <label><input type="checkbox" name="services" value="Gutter Cleaning"> Gutter Cleaning</label>
+    <label>
+      <input type="checkbox" name="services" value="Other" id="otherCheckbox"> Other
+    </label>
+    <input type="text" id="otherText" name="otherText" placeholder="Please specify" style="display:none; margin-top:5px;">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<style>
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
       <label for="message">Leave us Message:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
@@ -37,6 +61,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
